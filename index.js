@@ -40,6 +40,30 @@ const questions = [
     console.log(answers)
     // generate readme content based on answers
     // return the generated content
+   const { projectTitle, description, installation, usage, license, githubUsername, email } = answers;
+   const readmeContent = `
+# ${projectTitle}
+
+## Description
+${description}
+
+## Installation
+${installation}
+
+## Usage
+${usage}
+
+## License
+This application is covered under the ${license} license.
+
+## Questions
+For any questions or feedback, please reach out to me on GitHub or via email.
+GitHub: [${githubUsername}](https://github.com/${githubUsername})
+Email: ${email}
+`;
+
+  // Return the generated content
+  return readmeContent;
   };
   inquirer
   .prompt(questions)
@@ -54,7 +78,8 @@ const questions = [
     });
   });
 
-// TODO: Create a function to write README file
+
+  // TODO: Create a function to write README file
 // function writeToFile(fileName, data) { }
 
 // TODO: Create a function to initialize app
