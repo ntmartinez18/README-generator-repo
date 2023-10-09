@@ -6,29 +6,39 @@ const fs = require('fs');
 const questions = [
     {
       type: 'input',
-      name: 'title',
+      name: 'projectTitle',
       message: 'What is the title of your project?',
     },
     {
       type: 'input',
-      name: 'usage',
+      name: 'description',
       message: 'What is the app for?',
     },
     {
+        type: 'input',
+        name: 'installation',
+        message: 'How do you install the app?',
+      },
+    {
       type: 'input',
-      name: 'description',
+      name: 'usage',
       message: 'How is the app used?',
     },
     {
-      type: 'input',
-      name: 'install',
-      message: 'How do you install the app?',
+        type: 'input',
+        name: 'license',
+        message: 'What license is used?',
     },
     {
       type: 'input',
-      name: 'issues',
-      message: 'How can issues be reported?',
+      name: 'githubUsername',
+      message: 'What is your github username?',
     },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'What is your email address?',
+      },
     {
       type: 'input',
       name: 'contributions',
@@ -80,8 +90,6 @@ Email: ${email}
 
 
   // TODO: Create a function to write README file
-// function writeToFile(fileName, data) { }
-
 // TODO: Create a function to initialize app
 function init() { }
 
