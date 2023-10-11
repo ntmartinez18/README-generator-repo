@@ -27,7 +27,17 @@ const questions = [
     {
         type: 'input',
         name: 'license',
-        message: 'What license is used?',
+        message: 'Please choose a license (e.g. MIT, ISC, MS-PL)',
+    },
+    {
+    type: 'input',
+    name: 'contributions',
+    message: 'How can contributions be made?',
+    },
+    {
+        type: 'input',
+        name: 'test',
+        message: 'Include tests',
     },
     {
       type: 'input',
@@ -39,23 +49,26 @@ const questions = [
         name: 'email',
         message: 'What is your email address?',
       },
-    {
-      type: 'input',
-      name: 'contributions',
-      message: 'How can contributions be made?',
-    },
   ];
 
   const generateReadmeContent = (answers) => {
     console.log(answers)
     // generate readme content based on answers
     // return the generated content
-   const { projectTitle, description, installation, usage, license, githubUsername, email } = answers;
+   const { projectTitle, description, installation, usage, license, contributions, test, githubUsername, email } = answers;
    const readmeContent = `
 # ${projectTitle}
 
 ## Description
 ${description}
+
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributions](#contributions)
+- [Questions](#questions)
+
 
 ## Installation
 ${installation}
@@ -65,6 +78,12 @@ ${usage}
 
 ## License
 This application is covered under the ${license} license.
+
+## Contributions
+${contributions}
+
+## Tests
+${test}
 
 ## Questions
 For any questions or feedback, please reach out to me on GitHub or via email.
@@ -79,7 +98,7 @@ Email: ${email}
   .prompt(questions)
   .then((answers) => {
     const readmeContent = generateReadmeContent(answers);
-    fs.writeFile('README.md', readmeContent, (err) => {
+    fs.writeFile('project README.md', readmeContent, (err) => {
       if (err) {
         console.log(err);
       } else {
@@ -88,8 +107,6 @@ Email: ${email}
     });
   });
 
-
-  // TODO: Create a function to write README file
 // TODO: Create a function to initialize app
 function init() { }
 

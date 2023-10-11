@@ -1,21 +1,33 @@
 
-# README-generator
+# project name
 
 ## Description
-A command line application for developers to write high quality READMEs for projects
+used for fun
+
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributions](#contributions)
+- [Questions](#questions)
+
 
 ## Installation
-Install the inquirer package by running the command `npm install` in the command line 
-
-## Technologies
-* node.js
-* inquirer version 8.2.4
+install node.js
 
 ## Usage
-To use this application install the inquirer package using the command 'npm install'. In the command line, run the command "node index.js" where the user will be prompted to answer a series of questions. A high-quality README.md file will be then created and updated with the user's responses. 
-
-## Credits
-Received starter code from https://github.com/coding-boot-camp/potential-enigma and utilized the Xpert Learning Assistant. A special thanks to Hubert Ngyugen for guidance on this project as well as Ethan Cho.
+used in the command line
 
 ## License
-This project is covered under the MIT license
+This application is covered under the MIT license.
+
+## Contributions
+through github
+
+## Tests
+n/a
+
+## Questions
+For any questions or feedback, please reach out to me on GitHub or via email.
+GitHub: [ntmartinez18](https://github.com/ntmartinez18)
+Email: taylor@gmail.com
