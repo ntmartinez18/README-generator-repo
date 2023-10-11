@@ -1,8 +1,8 @@
 
-# project name
+# Example Project Name
 
 ## Description
-used for fun
+Example to generate README
 
 ## Table of Contents
 - [Installation](#installation)
@@ -13,21 +13,21 @@ used for fun
 
 
 ## Installation
-install node.js
+Install inquirer
 
 ## Usage
-used in the command line
+Used in the command line
 
 ## License
 This application is covered under the MIT license.
 
 ## Contributions
-through github
+Through github
 
 ## Tests
 n/a
 
 ## Questions
 For any questions or feedback, please reach out to me on GitHub or via email.
-GitHub: [ntmartinez18](https://github.com/ntmartinez18)
-Email: taylor@gmail.com
+GitHub: [exampleusername](https://github.com/exampleusername)
+Email: email@gmail.com

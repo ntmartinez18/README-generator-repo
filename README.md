@@ -4,6 +4,9 @@
 ## Description
 A command line application for developers to write high quality project READMEs
 
+## Assets
+https://drive.google.com/file/d/1AQlR8-k0FGJors94LW2HlL79bNBWnfs7/view
+
 ## Installation
 Install the inquirer package by running the command `npm install` in the command line 
 
